@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    android:background="@drawable/gradient_background">
+
+    <Button
+        android:id="@+id/btnHomeA3"
+        android:layout_width="159dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="40dp"
+        android:text="HOME"
+        android:backgroundTint="#439A46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackA3"
+        android:layout_width="159dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="28dp"
+        android:text="BACK"
+        android:backgroundTint="#439A46"
+        app:layout_constraintEnd_toStartOf="@+id/btnHomeA3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:text="Third Activity"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="This is my third activity to test"
+        android:textSize="16sp"
+        android:textColor="#CDFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

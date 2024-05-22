@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAA73F"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="234dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/descriptionEdit"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <EditText
+        android:id="@+id/dateEdit"
+        android:layout_width="232dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEdit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:text="Add task"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateEdit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/allTasksButton"
+        android:layout_width="204dp"
+        android:layout_height="63dp"
+        android:text="Get all tasks"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTaskButton"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="374dp"
+        android:layout_height="320dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allTasksButton" />
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="218dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="ID"
+        app:layout_constraintBottom_toTopOf="@+id/allTasksButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTaskButton"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="165dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="28dp"
+        android:text="Delete task"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/allTasksButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEdit"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
